@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans|K2D');
 
 body {
-    background: linear-gradient(90deg, lightgreen, lightblue);
+    background: linear-gradient(90deg, rgb(166, 75, 252), lightblue);
     font-family: 'K2D', sans-serif;
     display: flex;
     justify-content: center;

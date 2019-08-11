@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCoffee } from "@fortawesome/free-solid-svg-icons";
+import { faTwitter } from "@fortawesome/free-brands-svg-icons";
+import IconButton from "@material-ui/core/IconButton";
 import axios from "axios";
 import "./App.css";
 
@@ -36,6 +37,21 @@ const App = () => {
         </div>
         <div id="author">
           <h5>{author}</h5>
+        </div>
+        <div id="buttons">
+          <a
+            id="tweet-quote"
+            href={`https://twitter.com/intent/tweet?text=${quote} ${author}`}
+            target="_blank"
+            title="Post this quote on twitter!"
+          >
+            <IconButton>
+              <FontAwesomeIcon icon={faTwitter} />
+            </IconButton>
+          </a>
+          <button id="new-quote" className="buttons" onClick={getNewQuote}>
+            New Quote
+          </button>
         </div>
       </div>
     </div>
