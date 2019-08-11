@@ -17,4 +17,4 @@ Simple web app that displays random quotes that can easily be posted to twitter.
 
 # Test App Live
 
-Test for yourself here: https://react-web-store.herokuapp.com/
+Test for yourself here: https://radomize-quotes.herokuapp.com/
