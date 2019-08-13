@@ -2,10 +2,6 @@
 
 Simple web app that displays random quotes that can easily be posted to twitter.
 
-# Image
-
-![](Images/main_view.png)
-
 # Technologies Used
 
 - ReactJS
@@ -18,6 +14,10 @@ Simple web app that displays random quotes that can easily be posted to twitter.
 - React Hook Implementation
 - Twitter API
 - Use Effect Hooks
+
+# Images
+
+<img src='Images/main_view.png' width="500" heigth="500">
 
 # Test App Live
 
