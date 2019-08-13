@@ -2,6 +2,10 @@
 
 Simple web app that displays random quotes that can easily be posted to twitter.
 
+# Image
+
+![](Images/main_view.png)
+
 # Technologies Used
 
 - ReactJS
