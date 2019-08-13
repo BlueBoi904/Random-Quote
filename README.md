@@ -17,7 +17,7 @@ Simple web app that displays random quotes that can easily be posted to twitter.
 
 # Images
 
-<img src='Images/main_view.png' width="800" heigth="800">
+<img src='Images/main_view.png' width="700" heigth="700">
 
 # Test App Live
 
