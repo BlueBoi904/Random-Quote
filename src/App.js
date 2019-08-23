@@ -9,7 +9,6 @@ const App = () => {
   const [quote, newQuote] = useState("");
   const [author, newAuthor] = useState("");
 
-  const tweetUrl = "https://twitter.com/intent/tweet";
   useEffect(() => {
     axios.get("https://api.quotable.io/random").then(res => {
       const tempQuote = res.data.content;
@@ -19,13 +18,16 @@ const App = () => {
     });
   }, []);
 
-  const getNewQuote = () => {
-    axios.get("https://api.quotable.io/random").then(res => {
+  const getNewQuote = async () => {
+    try {
+      const res = await axios.get("https://api.quotable.io/random");
       const tempQuote = res.data.content;
       const tempAuthor = res.data.author;
       newQuote(tempQuote);
       newAuthor(tempAuthor);
-    });
+    } catch (err) {
+      console.log("Oops, looks like there was an error", err);
+    }
   };
   return (
     <div id="wrapper">
@@ -42,6 +44,7 @@ const App = () => {
           <a
             id="tweet-quote"
             href={`https://twitter.com/intent/tweet?text=${quote} ${author}`}
+            rel="noopener noreferrer"
             target="_blank"
             title="Post this quote on twitter!"
           >
